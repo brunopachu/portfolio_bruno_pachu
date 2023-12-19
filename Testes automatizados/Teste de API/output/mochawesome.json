@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-14T12:44:36.005Z",
+    "end": "2023-12-14T12:44:41.356Z",
+    "duration": 5351,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b971af9e-24f7-4789-b087-a2408fe09828",
+      "title": "",
+      "fullFile": "C:\\Users\\gfbgfb\\Documents\\backend\\API1\\API_test.js",
+      "file": "\\API_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "10a31798-a42d-4069-b985-08788dbe49b5",
+          "title": "people",
+          "fullFile": "C:\\Users\\gfbgfb\\Documents\\backend\\API1\\API_test.js",
+          "file": "\\API_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"people\"",
+              "fullTitle": "people \"before all\" hook: codeceptjs.beforeSuite in \"people\"",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "e7951ad2-30db-4a13-945e-e8145128f846",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"people\"",
+              "fullTitle": "people \"before each\" hook: codeceptjs.before in \"people\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "aadb137b-7618-4d20-864e-865bc1771f0e",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"people\"",
+              "fullTitle": "people \"after all\" hook: codeceptjs.afterSuite in \"people\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "43d2cc0a-7322-4a9b-92d7-cbfdc3adff6a",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"people\"",
+              "fullTitle": "people \"after each\" hook: finalize codeceptjs in \"people\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "70034dcb-4900-4b48-b525-824a638e4937",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Teste validar request people",
+              "fullTitle": "people: Teste validar request people",
+              "timedOut": false,
+              "duration": 4520,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.sendGetRequest('/people')\n    I.seeResponseCodeIsSuccessful()",
+              "err": {},
+              "uuid": "50349f1c-dcc9-48c3-9f03-4e6bc517b219",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste validar request people 1",
+              "fullTitle": "people: Teste validar request people 1",
+              "timedOut": false,
+              "duration": 785,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.sendGetRequest('/people/4')\n    I.seeResponseCodeIsSuccessful()\n    I.seeResponseContainsJson({\n        name: 'Darth Vader'\n    })\n    I.seeResponseContainsKeys(['name','mass'])",
+              "err": {},
+              "uuid": "3095f44a-fd7e-4412-a83c-3083d77ef891",
+              "parentUUID": "10a31798-a42d-4069-b985-08788dbe49b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50349f1c-dcc9-48c3-9f03-4e6bc517b219",
+            "3095f44a-fd7e-4412-a83c-3083d77ef891"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5305,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "output"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
