@@ -1,26 +1,20 @@
-def notas (x, y, z):
-  aprovado = 6
-  notas2 = [x, y, z]
-  media = (x + y + z) / len(notas2)
-  if media >= aprovado:
-    return "APROVADO"
+def notas(x, y, z):
+  media = (x + y + z) / 3
+  if media >= 6:
+    return "Aprovado"
   else:
-    return "REPROVADO"
+    return "Reprovado"
 
 try:
-  nota1 = int(input ("Digite a nota 1: "))
-  if nota1<0 or nota1>10:
-    print ("Insira valores entre 0 e 10")
+  nota1 = int(input("Digite a nota 1: "))
+  nota2 = int(input("Digite a nota 2: "))
+  nota3 = int(input("Digite a nota 3: "))
+
+  if 0 <= nota1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota3 <= 10:
+    media_final = notas(nota1, nota2, nota3)
+    print(f"Você foi {media_final} com a média {(nota1 + nota2 + nota3) / 3}")
   else:
-    nota2 = int(input ("Digite a nota 2: "))
-    if nota2<0 or nota2>10:
-      print ("Insira valores entre 0 e 10")
-    else:
-      nota3 = int(input ("Digite a nota 3: "))
-      if nota3<0 or nota3>10:
-        print ("Insira valores entre 0 e 10")
-      else:
-        media_final = notas (nota1, nota2, nota3)
-        print (f"Resultado Final: {media_final}")
+    print("Insira valores entre 0 e 10")
+
 except ValueError:
-  print ("Insira valores válidos")
+  print("Insira valores válidos")
